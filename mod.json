@@ -1,0 +1,14 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "ziqgao.null_copyright",
+	"name": "Null Copyright",
+	"version": "v0.1.0",
+	"developer": "ZiqGao",
+	"description": "Nullifies copyright by replacing them with covers"
+}
