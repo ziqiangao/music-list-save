@@ -1,5 +1,5 @@
 {
-	"geode": "4.2.0",
+	"geode": "4.3.1",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -8,7 +8,7 @@
 	},
 	"id": "ziqgao.music-list-save",
 	"name": "Music List Saver",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "ZiqGao",
 	"description": "Save Downloaded Songs To A Playlist",
 	"dependencies": {
@@ -18,7 +18,6 @@
 		"listfmt": {
 			"type": "string",
 			"name": "List Format",
-			"enable-if": "exportlist",
 			"description": "Format To Export The List In",
 			"one-of": [
 				"M3U",
@@ -33,7 +32,6 @@
 			"default": "Saved Songs",
 			"name": "List Name",
 			"description": "Name Of The Exported List Without the Extension",
-			"enable-if": "exportlist",
 			"match": "^[^<>:\\\"/\\\\|?*]+$"
 		},
 		"listLocation": {
@@ -42,5 +40,6 @@
 			"description": "Change Where the List Is Saved",
 			"default": "{gd_dir}"
 		}
-	}
+	},
+	"links": {"source": "https://github.com/ziqiangao/music_organizer"}
 }
