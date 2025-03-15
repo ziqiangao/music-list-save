@@ -6,9 +6,41 @@
 		"mac": "2.2074",
 		"ios": "2.2074"
 	},
-	"id": "ziqgao.null_copyright",
-	"name": "Null Copyright",
-	"version": "v0.1.0",
+	"id": "ziqgao.music-list-save",
+	"name": "Music List Saver",
+	"version": "v1.0.0",
 	"developer": "ZiqGao",
-	"description": "Nullifies copyright by replacing them with covers"
+	"description": "Save Downloaded Songs To A Playlist",
+	"dependencies": {
+		"km7dev.server_api": ">=2.0.0"
+	},
+	"settings": {
+		"listfmt": {
+			"type": "string",
+			"name": "List Format",
+			"enable-if": "exportlist",
+			"description": "Format To Export The List In",
+			"one-of": [
+				"M3U",
+				"TXT",
+				"JSON",
+				"HTML"
+			],
+			"default": "M3U"
+		},
+		"listname": {
+			"type": "string",
+			"default": "Saved Songs",
+			"name": "List Name",
+			"description": "Name Of The Exported List Without the Extension",
+			"enable-if": "exportlist",
+			"match": "^[^<>:\\\"/\\\\|?*]+$"
+		},
+		"listLocation": {
+			"type": "folder",
+			"name": "List Folder",
+			"description": "Change Where the List Is Saved",
+			"default": "{gd_dir}"
+		}
+	}
 }
